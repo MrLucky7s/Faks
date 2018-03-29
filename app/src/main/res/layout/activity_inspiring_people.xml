@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Scroll view omogućava scrollanje cijelog view-a (portrait mode)-->
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageButton
+        android:id="@+id/imgCarmack"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/john_carmack"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/imgLee"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgCarmack"
+        app:srcCompat="@drawable/beerners_lee"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/imgKatz"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgLee"
+        app:srcCompat="@drawable/philkantz"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/carmackText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imgCarmack"
+        android:text="@string/carmackData"
+        android:layout_toRightOf="@+id/imgLee"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:id="@+id/leeText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imgCarmack"
+        android:layout_toEndOf="@+id/imgCarmack"
+        android:text="@string/leeData"
+        android:layout_toRightOf="@+id/imgCarmack" />
+
+    <TextView
+        android:id="@+id/kantzText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imgLee"
+        android:layout_toEndOf="@+id/imgCarmack"
+        android:text="@string/katzData"
+        android:layout_toRightOf="@+id/imgCarmack" />
+</RelativeLayout>
+
+</ScrollView>
