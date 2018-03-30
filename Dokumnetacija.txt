@@ -1,0 +1,8 @@
+Aplikacija se sastoji od ScrollView-a, 3 TextView-a, 3 ImageButton-a a korišten je relative
+layout.
+
+Scrollview omoguæava scroll-anje aplikacije kada je u ureðaj u "landscape" orijenatciji, 
+kilikom na ImageButton se pomoæu OnClikc metode poziva Toast. 
+
+Pomoæu ScrollingMovementMethod-a se omguæuje scrollanje individualnih TextView-ova u 
+"portrait" orijentaciji.
